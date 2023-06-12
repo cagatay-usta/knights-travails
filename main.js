@@ -1,13 +1,5 @@
 import knightMoves from "./knightMoves.js";
 
-// const board = (() => {
-//   const board = [];
-//   for (let i = 0; i < 8; i++) {
-//     for (let j = 0; j < 8; j++) {
-//       board.push(new Node([i, j]));
-//     }
-//   }
-//   return board;
-// })();
-
-console.log(knightMoves([0, 0], [2, 1]));
+knightMoves([0, 0], [2, 1]); // 0,0 -> 2,1
+knightMoves([7, 7], [0, 0]); // 7,7 -> 5,6 -> 3,5 -> 1,4 -> 0,2 -> 2,1 -> 0,0
+knightMoves([1, 4], [7, 1]); // 1,4 -> 3,3 -> 5,2 -> 7,1
